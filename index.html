@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>SPOTIFY</title>
 </head>
@@ -12,26 +15,105 @@
    
 
     <!-- sidebar laterale -->
-    <aside>
+    <aside class="fl row">
         <div class="aside-content">
+            <div class="logo-container">
+                <img src="img/logo.svg" alt="logo spotify">
+            </div> 
+            <div class="icon-text-aside">
+                <div class="icon-aside"><img src="img/home.svg" alt=""></div>
+                <span>Home</span>
+            </div>    
+            <div class="icon-text-aside">
+                <div class="icon-aside"><img src="img/search.svg" alt=""></div>
+                <span>Cerca</span>
+            </div>
+            <div class="icon-text-aside">
+                <div class="icon-aside"><img src="img/libreria.svg" alt=""></div>
+                <span>La tua libreria</span>
+            </div>
 
+            <!-- sezione playlist all'interno della sidebar -->
+            <section>
+                <h6>playlist</h6>
+                <div class="quadrato-text-container">
+                    <div class="quadrato-sidebar"><span>+</span></div>
+                    <span class="text-playlist">Crea Playlist</span>
+                </div>
+                
+            </section>
+
+            <!-- sezione john doe sidebar -->
+            <section>
+
+            </section>
         </div>
     </aside>
 
-    <!-- header pagina -->
-    <header>
-        <div class="header-content">
-            <span class="button">effettua l'upgrade</span>
+    
+
+    
+
+    <!-- main pagina -->
+    <main class="fl row">
+        <!-- header pagina -->
+        <header class="row">
+            <div class="header-content">
+                <span class="button">effettua l'upgrade</span>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="main-tags">
+                <span>in evidenza</span>
+                <span>podcast</span>
+                <span>classifiche</span>
+                <span>generi e mood</span>
+                <span>nuove uscite</span>
+                <span>scopri</span>
+            </div>
+
+            <!-- sezione album -->
+            <div class="albums">
+                <h2>Recently Played</h2>
+                <div class="item-container">
+                    <div class="item">
+                        <div class="album-container">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="album-container">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="album-container">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="album-container">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="album-container">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="album-container">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- main content pagina -->
-    <main>
-
     </main>
 
     <!-- navbar finale -->
-    <footer>
+    <footer class="fl">
 
     </footer>
    

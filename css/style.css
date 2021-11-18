@@ -4,18 +4,112 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/*classi utility*/
+.fl{
+    float: left;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content:"";
+}
+
+
+
+/*fine classi utility*/
 
 aside{
     background-color: black;
     width: 180px;
-    height: 100vh;
-    float: left;
+    height:calc(100vh - 70px);
 }
 
+.aside-content{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo-container{
+    width: 120px;
+    padding-top: 10px;
+    margin-bottom: 23px;
+}
+
+.logo-container img{
+    width: 100%;
+}
+
+.icon-text-aside{
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.icon-aside{
+    width: 30px;
+}
+
+.icon-aside img{
+    width: 100%;
+}
+
+.icon-text-aside span{
+    margin-left: 5px;
+}
+
+h6{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.aside-content section{
+    margin-top: 20px;
+}
+
+.quadrato-sidebar{
+    width: 35px;
+    height: 35px;
+    background-color: lightgrey;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.quadrato-sidebar span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+}
+
+.quadrato-text-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quadrato-text-container span.text-playlist{
+    font-size: 15px;
+}
+
+
 header{
+    position: fixed;
     height: 70px;
     width: calc(100% - 180px);
-    float: left;
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -40,18 +134,68 @@ header{
     font-size: 10px;
     padding: 5px 20px;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
 }
 
 main{
     width: calc(100% - 180px);
-    height: 600px;
-    background-color: coral;
-    float: left;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    
+}
+
+.main-content{
+    background-color: rgb(39, 38, 38);
+    margin-top: 70px;
+    height: calc(100vh - 140px);
+}
+
+.main-tags{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.main-tags span{
+    text-transform: uppercase;
+    color: rgb(102, 98, 99);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.albums{
+    width: 98%;
+    height: 100%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.albums h2{
+    font-size: 20px;
+}
+
+.item-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.item{
+    width: calc(100% / 6);
+}
+
+.album-container{
+    width: 100%;
+}
+
+.album-container img{
+    width: 100%;
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
     width: 100%;
     height: 70px;
     background-color: grey;
