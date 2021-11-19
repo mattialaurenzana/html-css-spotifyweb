@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>SPOTIFY</title>
 </head>
@@ -19,33 +21,53 @@
         <div class="aside-content">
             <div class="logo-container">
                 <img src="img/logo.svg" alt="logo spotify">
-            </div> 
-            <div class="icon-text-aside">
-                <div class="icon-aside"><img src="img/home.svg" alt=""></div>
-                <span>Home</span>
-            </div>    
-            <div class="icon-text-aside">
-                <div class="icon-aside"><img src="img/search.svg" alt=""></div>
-                <span>Cerca</span>
             </div>
-            <div class="icon-text-aside">
-                <div class="icon-aside"><img src="img/libreria.svg" alt=""></div>
-                <span>La tua libreria</span>
-            </div>
+            <section class="side-top">
+                <div class="icon-text-aside">
+                    <div class="icon-aside"><img src="img/home.svg" alt=""></div>
+                    <span>Home</span>
+                </div>    
+                <div class="icon-text-aside">
+                    <div class="icon-aside"><img src="img/search.svg" alt=""></div>
+                    <span>Cerca</span>
+                </div>
+                <div class="icon-text-aside">
+                    <div class="icon-aside"><img src="img/libreria.svg" alt=""></div>
+                    <span>La tua libreria</span>
+                </div>
+            </section> 
+            
 
             <!-- sezione playlist all'interno della sidebar -->
-            <section>
+            <section class="side-mid">
                 <h6>playlist</h6>
                 <div class="quadrato-text-container">
                     <div class="quadrato-sidebar"><span>+</span></div>
                     <span class="text-playlist">Crea Playlist</span>
                 </div>
+                <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                </ul>
                 
             </section>
 
             <!-- sezione john doe sidebar -->
-            <section>
-
+            <section class="side-bottom">
+                <div class="side-icon-text">
+                    <span class="circle-arrow"><i class="far fa-arrow-alt-circle-down"></i></span>
+                    <span>Installa app</span>
+                </div>
+                <hr>
+                <div class="side-icon-text last-aside">
+                    <span class="user-side"><i class="fas fa-user-circle"></i></span>
+                    <span>John Doe</span>
+                </div>
             </section>
         </div>
     </aside>
@@ -81,40 +103,133 @@
                         <div class="album-container">
                             <img src="img/metal_lifting.jpg" alt="">
                         </div>
+                        <span>Heavy Metal</span>
+                        <span class="subtitle">Subtitle</span>
                     </div>
                     <div class="item">
                         <div class="album-container">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <img src="img/stranger.jpeg" alt="">
                         </div>
+                        <span>Stranger Things, Vol.1 (a Netflix Original series Soundtrack) </span>
+                        <span class="subtitle">Kyle Dixon Michael Stein</span>
                     </div>
                     <div class="item">
                         <div class="album-container">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <img src="img/aquietplace.jpeg" alt="">
                         </div>
+                        <span>A quiet place</span>
+                        <span class="subtitle">Subtitle</span>
                     </div>
                     <div class="item">
                         <div class="album-container">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <img src="img/split.jpeg" alt="">
                         </div>
+                        <span>Split</span>
+                        <span class="subtitle">Subtitle</span>
                     </div>
                     <div class="item">
                         <div class="album-container">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <img src="img/cure.jpeg" alt="">
                         </div>
+                        <span>A cure for wellness</span>
+                        <span class="subtitle">Subtitle</span>
                     </div>
                     <div class="item">
                         <div class="album-container">
-                            <img src="img/metal_lifting.jpg" alt="">
+                            <img src="img/sinister.jpeg" alt="">
                         </div>
+                        <span>Sinister</span>
+                        <span class="subtitle">Subtitle</span>
                     </div>
                 </div>
+
+                <!-- sezione contenuti suggeriti -->
+                <section class="brani-creati-per-te">
+                    <h2>Creato per John Doe</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+                    <div class="dailymix-container">
+                        <div class="item">
+                            <div class="radar-container">
+                                <img src="img/radar.jpeg" alt="">
+                            </div>
+                            <span>Release Radar</span>
+                        </div>
+                        <div class="item">
+                            <div class="radar-container">
+                                <img src="img/mixdaily.jpeg" alt="">
+                            </div>
+                            <span>Daily Mix 1</span>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <!-- sezione brani popolari -->
+                <section class="brani-popolari">
+                    <h2>Artisti più popolari</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti</h5>
+                    <div class="popular-container">
+                        <div class="item">
+                            <div class="circle circle-container-1"><img src="img/youg.jpeg" alt=""></div>
+                        </div>
+                        <div class="item">
+                            <div class="circle circle-container-2"><img src="img/einaudi.jpeg" alt=""></div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+
+               
+
+
             </div>
+
+            
         </div>
     </main>
 
     <!-- navbar finale -->
     <footer class="fl">
+        <div class="footer-left"> 
+            <div class="footer-img"><img src="img/sinister.jpeg" alt=""></div>
+            <div class="double-text">
+                <span>Sinister</span>
+                <span>Brano Nome</span>
+            </div>
+            <span><i class="far fa-heart"></i></span>
+            <span><i class="far fa-folder"></i></span>
+        </div>
 
+        <div class="footer-center">
+            <div class="footer-center-content">
+                <div class="player">
+                    <span><i class="fas fa-random"></i></span>
+                    <span><i class="fas fa-step-backward"></i></span>
+                    <span><i class="far fa-play-circle play-circle"></i></span>
+                    <span><i class="fas fa-step-forward"></i></span>
+                    <span><i class="fas fa-redo"></i></span>
+                </div>
+                <div class="input-range">
+                    <span>0:25</span>
+                    <div class="range">
+                        <div class="range-hover"></div>
+                        <div class="pallino-range"></div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <span><i class="fas fa-sliders-h"></i></span>
+            <span><i class="fas fa-tv"></i></span>
+            <span><i class="fas fa-volume-up"></i></span>
+            <div class="range-2">
+                <div class="range-2-hover"></div>
+            </div>
+        </div>
     </footer>
    
    
