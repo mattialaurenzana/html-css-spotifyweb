@@ -47,8 +47,12 @@ aside{
     margin-bottom: 6px;
 }
 
-.logo-container img{
+.logo-container img:nth-child(1){
     width: 100%;
+}
+
+.logo-container img:nth-child(2){
+    display: none;
 }
 
 .icon-text-aside{
@@ -191,7 +195,7 @@ header{
 main{
     width: calc(100% - 180px);
     height: calc(100vh - 60px);
-    background-color: #112222; 
+    background-color: #141616; 
     overflow-y: scroll;
     
 }
@@ -215,6 +219,10 @@ main{
     color: rgb(102, 98, 99);
     font-weight: bold;
     font-size: 13px;
+}
+
+.main-tags span:hover{
+    border-bottom: 2px solid rgb(92, 199, 21);
 }
 
 .albums{
@@ -243,15 +251,90 @@ h5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
-.album-container{
+.album-container-1{
     width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/metal_lifting.jpg') no-repeat center;
+    background-size: cover;
 }
 
+.album-container-1{
+    width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/metal_lifting.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.album-container-2{
+    width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/stranger.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.album-container-3{
+    width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/aquietplace.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.album-container-4{
+    width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/split.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.album-container-5{
+    width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/cure.jpeg') no-repeat center;
+    background-size: cover;
+}
+
+.album-container-6{
+    width: 100%;
+    height: 153px;
+    position: relative;
+    background: url('../img/sinister.jpeg') no-repeat center;
+    background-size: cover;
+}
 .album-container img{
     width: 100%;
+}
+
+.player-item{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+
+}
+
+.player-item i{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.album-container:hover .player-item{
+    display: inline-block;
+}
+
+.item span{
+    margin-top: 15px;
 }
 
 .subtitle{
@@ -309,7 +392,8 @@ footer{
 .footer-center{
     display: flex;
     width: calc(100% - 360px);
-    flex-grow: 1;
+    min-width: calc(100% / 3);
+    flex-grow: 1; 
     height: 100%;
 }
 
@@ -367,6 +451,7 @@ footer{
 .input-range{
     display: flex;
     align-items: center;
+    width: 60%;
     
 }
 
@@ -380,7 +465,7 @@ footer{
 
 .range{
     height: 3px;
-    width: 260px;
+    width: 100%;
     background-color: rgb(102, 98, 99);
     margin: 0 10px;
     display: flex;
@@ -388,7 +473,7 @@ footer{
 
 .range-hover{
     height: 100%;
-    width: 60px;
+    width: 25%;
     background-color: white;
 }
 
@@ -429,12 +514,103 @@ footer{
     
 }
 
+.white-hover:hover{
+    color: white;
+    cursor: pointer;
+}
+
 .range-2-hover{
     height: 100%;
     width: 30px;
     background-color: white;
 }
 
+/* mobile */
+@media screen and (max-width:768px){
+    aside{
+        width: 45px;
+    }
+
+    header{
+        width: calc(100% - 45px);
+    }
+    .side-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon-text-aside span{
+        display: none;
+    }
+
+    .side-mid{
+        opacity: 0;
+    }
+
+    .side-bottom .side-icon-text span:nth-child(2){
+        display: none;
+    }
+
+    .side-bottom hr{
+        display: none;
+    }
+
+    .side-icon-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .icon-aside{
+        width: 20px;
+    }
+
+    .logo-container img:nth-child(1){
+        display: none;
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        margin-left: 11px;
+    }
+
+    .logo-container img:nth-child(2){
+        display: inline-block;
+        width: 100%;
+    }
+
+    main{
+        width: calc(100% - 45px);
+    }
+
+    .item-container{
+        flex-wrap: wrap;
+    }
+
+    .item{
+      
+        width: calc((100% / 2) - 10px);
+    }
+
+    
+}
+
+
+/* tablet */
+@media screen and(max-width:992px){
+    .item-container{
+        flex-wrap: wrap;
+    }
+    .item{
+        width: calc((100% / 4)-10px);
+    }
+}
 
 
 
