@@ -162,6 +162,7 @@ hr{
 
 header{
     position: fixed;
+    z-index: 4;
     height: 70px;
     width: calc(100% - 180px);
     background-color: rgba(0, 0, 0, 0.9);
@@ -202,7 +203,7 @@ main{
 
 .main-content{
     margin-top: 70px;
-    height: calc(100vh - 140px);
+    height: calc(100vh - 142px);
 }
 
 .main-tags{
@@ -253,66 +254,19 @@ h5{
     align-items: center;
 }
 
-.album-container-1{
-    width: 100%;
-    height: 153px;
+.album-container{
     position: relative;
-    background: url('../img/metal_lifting.jpg') no-repeat center;
-    background-size: cover;
 }
 
-.album-container-1{
-    width: 100%;
-    height: 153px;
-    position: relative;
-    background: url('../img/metal_lifting.jpg') no-repeat center;
-    background-size: cover;
-}
 
-.album-container-2{
-    width: 100%;
-    height: 153px;
-    position: relative;
-    background: url('../img/stranger.jpeg') no-repeat center;
-    background-size: cover;
-}
-
-.album-container-3{
-    width: 100%;
-    height: 153px;
-    position: relative;
-    background: url('../img/aquietplace.jpeg') no-repeat center;
-    background-size: cover;
-}
-
-.album-container-4{
-    width: 100%;
-    height: 153px;
-    position: relative;
-    background: url('../img/split.jpeg') no-repeat center;
-    background-size: cover;
-}
-
-.album-container-5{
-    width: 100%;
-    height: 153px;
-    position: relative;
-    background: url('../img/cure.jpeg') no-repeat center;
-    background-size: cover;
-}
-
-.album-container-6{
-    width: 100%;
-    height: 153px;
-    position: relative;
-    background: url('../img/sinister.jpeg') no-repeat center;
-    background-size: cover;
-}
 .album-container img{
     width: 100%;
 }
 
 .player-item{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -331,6 +285,7 @@ h5{
 
 .album-container:hover .player-item{
     display: inline-block;
+    cursor: pointer;
 }
 
 .item span{
